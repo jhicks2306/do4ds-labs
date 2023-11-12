@@ -46,7 +46,7 @@ print(f"Coefficients {model.coef_}")
 ```
 
 ```{python}
-v = VetiverModel(model, model_name='penguin_model')
+v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
 board = board_folder('../data/model/', versioned=True, allow_pickle_read=True)
 vetiver_pin_write(board, v)
 ```
