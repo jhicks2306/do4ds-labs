@@ -14,15 +14,17 @@ from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing
 from vetiver import VetiverModel, vetiver_pin_write
 from pins import board_folder
+import duckdb
 ```
 
 ## Get Data
 
 
 ```{python}
-df = penguins.load_penguins().dropna()
-
-df.head(3)
+con = duckdb.connect('my-db.duckdb')
+df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
+con.close()
+df.head()
 ```
 
 ## Define Model and Fit
@@ -45,7 +47,7 @@ print(f"Columns {X.columns}")
 print(f"Coefficients {model.coef_}")
 ```
 
-```{python}
+```{.python .cell-code}
 v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
 board = board_folder('../data/model/', versioned=True, allow_pickle_read=True)
 vetiver_pin_write(board, v)
