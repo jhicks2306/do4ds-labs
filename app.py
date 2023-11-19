@@ -36,7 +36,7 @@ def server(input, output, session):
     @reactive.Calc
     @reactive.event(input.predict)
     def pred():
-        r = requests.post(api_url, json = vals())
+        r = requests.post(api_url, json = [vals()])
         return r.json().get('predict')[0]
 
     @output
