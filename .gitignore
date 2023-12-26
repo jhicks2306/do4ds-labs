@@ -2,3 +2,5 @@ renv/
 venv/
 call-api.ipynb
 notebook.ipynb
+model_api.ipynb
+scratchpad.ipynb
