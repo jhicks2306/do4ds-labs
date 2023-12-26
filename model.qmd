@@ -47,8 +47,8 @@ print(f"Columns {X.columns}")
 print(f"Coefficients {model.coef_}")
 ```
 
-```{.python .cell-code}
+```{python}
 v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
-board = board_folder('../data/model/', versioned=True, allow_pickle_read=True)
+board = board_folder('../models/do4ds/', versioned=True, allow_pickle_read=True)
 vetiver_pin_write(board, v)
 ```
