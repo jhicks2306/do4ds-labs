@@ -1,5 +1,11 @@
 from shiny import App, render, ui, reactive
 import requests
+import logging
+
+logging.basicConfig(
+    format='%(asctime)s - %(message)s',
+    level=logging.INFO
+)
 
 api_url = 'http://127.0.0.1:8080/predict'
 
@@ -36,7 +42,13 @@ def server(input, output, session):
     @reactive.Calc
     @reactive.event(input.predict)
     def pred():
+        logging.info("Request made.")
         r = requests.post(api_url, json = [vals()])
+        logging.info("Request returned.")
+
+        if r.status_code != 200:
+            logging.error("HTTP error returned.")
+            
         return r.json().get('predict')[0]
 
     @output
