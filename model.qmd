@@ -52,3 +52,5 @@ v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
 board = board_folder('../models/do4ds/', versioned=True, allow_pickle_read=True)
 vetiver_pin_write(board, v)
 ```
+
+Go back to [EDA Page](eda.qmd).

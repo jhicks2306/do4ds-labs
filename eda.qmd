@@ -58,3 +58,5 @@ df %>%
 #| include: false
 DBI::dbDisconnect(con, shutdown=TRUE)
 ```
+
+Check out the [Model Page](model.qmd) for more detail.
