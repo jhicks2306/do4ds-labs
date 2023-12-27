@@ -7,6 +7,7 @@ format:
 
 
 ```{python}
+#| echo: false
 from palmerpenguins import penguins
 from pandas import get_dummies
 import numpy as np
@@ -21,6 +22,7 @@ import duckdb
 
 
 ```{python}
+#| echo: false
 con = duckdb.connect('my-db.duckdb')
 df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
 con.close()
@@ -31,16 +33,18 @@ df.head()
 
 
 ```{python}
+#| code-fold: false
 X = get_dummies(df[['bill_length_mm', 'species', 'sex']], drop_first = True)
 y = df['body_mass_g']
 
 model = LinearRegression().fit(X, y)
 ```
 
-## Get some information
+## Get Some Information
 
 
 ```{python}
+#| echo: false
 print(f"R^2 {model.score(X,y)}")
 print(f"Intercept {model.intercept_}")
 print(f"Columns {X.columns}")
@@ -48,9 +52,8 @@ print(f"Coefficients {model.coef_}")
 ```
 
 ```{python}
+#| include: false
 v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
 board = board_folder('../models/do4ds/', versioned=True, allow_pickle_read=True)
 vetiver_pin_write(board, v)
 ```
-
-Go back to [EDA Page](eda.qmd).

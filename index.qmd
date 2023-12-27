@@ -1,0 +1,5 @@
+---
+title: "do4ds-labs"
+---
+
+This is a Quarto website for the exercises from DevOps for Data Science.
