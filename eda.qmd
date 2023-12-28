@@ -42,7 +42,7 @@ df %>%
   knitr::kable()
 ```
 
-## Penguin Size vs Mass by Species
+## Penguin Size vs Mass by Species [EDIT]
 
 
 ```{r}
