@@ -58,3 +58,5 @@ df %>%
 #| include: false
 DBI::dbDisconnect(con, shutdown=TRUE)
 ```
+
+A small change here.
