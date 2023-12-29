@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/jhicks2306/do4ds-labs/eda.html</loc>
-    <lastmod>2023-12-28T14:32:02.029Z</lastmod>
+    <loc>https://jhicks2306.github.io/do4ds-labs/scratchpad.html</loc>
+    <lastmod>2023-12-29T16:32:45.050Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jhicks2306/do4ds-labs/index.html</loc>
-    <lastmod>2023-12-28T14:31:51.989Z</lastmod>
+    <loc>https://jhicks2306.github.io/do4ds-labs/eda.html</loc>
+    <lastmod>2023-12-29T16:32:44.558Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jhicks2306/do4ds-labs/model.html</loc>
-    <lastmod>2023-12-28T14:31:57.381Z</lastmod>
+    <loc>https://jhicks2306.github.io/do4ds-labs/model_api.html</loc>
+    <lastmod>2023-12-29T16:32:37.562Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jhicks2306.github.io/do4ds-labs/model.html</loc>
+    <lastmod>2023-12-29T16:32:41.522Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jhicks2306.github.io/do4ds-labs/index.html</loc>
+    <lastmod>2023-12-29T16:32:44.807Z</lastmod>
   </url>
 </urlset>
