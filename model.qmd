@@ -14,8 +14,9 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing
 from vetiver import VetiverModel, vetiver_pin_write
-from pins import board_folder
+from pins import board_folder, board_s3
 import duckdb
+import s3fs
 ```
 
 ## Get Data
@@ -54,6 +55,6 @@ print(f"Coefficients {model.coef_}")
 ```{python}
 #| include: false
 v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
-board = board_folder('../models/do4ds/', versioned=True, allow_pickle_read=True)
+board = board_s3('do4ds-lab-s3', allow_pickle_read=True)
 vetiver_pin_write(board, v)
 ```
