@@ -17,6 +17,7 @@ from vetiver import VetiverModel, vetiver_pin_write
 from pins import board_folder, board_s3
 import duckdb
 import s3fs
+# Added repo environment variables
 ```
 
 ## Get Data
