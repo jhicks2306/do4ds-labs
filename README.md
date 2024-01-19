@@ -6,6 +6,8 @@ In this project I built:
 
 You can view the Quarto website here and a video of the interactive dahsboard is below. (I took the interactive dashboard down to avoid ongoing fees from AWs.)
 
+[penguin-model.webm](https://github.com/jhicks2306/do4ds-labs/assets/45722942/a973d73a-b1d3-4808-a056-32f215b3a79d)
+
 This project used dummy data to practice some fundamental skills related to developer operations for data science.
 
 Below summarises the skills practiced during this project:
