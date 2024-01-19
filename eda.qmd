@@ -43,7 +43,7 @@ df %>%
   knitr::kable()
 ```
 
-## Penguin Size vs Mass by Species
+## Penguin Mass vs Bill Length by Species
 
 
 ```{r}
@@ -54,6 +54,7 @@ df %>%
   geom_smooth(method = "lm")
 ```
 
+Chart shows penguin body mass is positively correlated with bill length for all species in the data set.
 
 ```{r}
 #| include: false

@@ -2,4 +2,10 @@
 title: "do4ds-labs"
 ---
 
-This is a Quarto website for the exercises from DevOps for Data Science.
+This is a Quarto website created as part of the exercises from [DevOps for Data Science](https://do4ds.com/). It contains:
+
+- Basic [EDA](eda.qmd) for the Palmer Penguins data set.
+- Sample code training a simple machine-learning [model](model.qmd)
+
+The website has not been refined. It was constructed simply to practice the process of deployment using Quarto and GitHub actions.
+

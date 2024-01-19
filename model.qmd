@@ -20,8 +20,9 @@ import s3fs
 # Added repo environment variables
 ```
 
-## Get Data
+## Get Training Data
 
+Fetch data from `DuckDB` database.
 
 ```{python}
 #| echo: false
@@ -33,6 +34,7 @@ df.head()
 
 ## Define Model and Fit
 
+Define a basic linear regression model using `sklearn` to predict penguin body mass.
 
 ```{python}
 #| code-fold: false
@@ -42,8 +44,9 @@ y = df['body_mass_g']
 model = LinearRegression().fit(X, y)
 ```
 
-## Get Some Information
+## Get Summary Information
 
+Check that the model is working as expected.
 
 ```{python}
 #| echo: false
@@ -52,6 +55,8 @@ print(f"Intercept {model.intercept_}")
 print(f"Columns {X.columns}")
 print(f"Coefficients {model.coef_}")
 ```
+
+This model ready to be uploaded into AWS S3 storage and served via API using `vetiver`.
 
 ```{python}
 #| include: false
