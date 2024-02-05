@@ -4,7 +4,7 @@ In this project I built:
 1. **Quarto website** and published it to GitHub pages
 2. An **interactive dashboard** where the user can explore a basic machine learning model.
 
-You can view the Quarto website here and a video of the interactive dahsboard is below. (I took the interactive dashboard down to avoid ongoing fees from AWs.)
+You can view the Quarto website here and a video of the interactive dahsboard is below. (I took the interactive dashboard down to avoid ongoing fees from AWS.)
 
 [penguin-model.webm](https://github.com/jhicks2306/do4ds-labs/assets/45722942/a973d73a-b1d3-4808-a056-32f215b3a79d)
 
