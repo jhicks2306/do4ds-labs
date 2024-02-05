@@ -1,1 +1,1 @@
-Sitemap: https://github.com/jhicks2306/do4ds-labs/sitemap.xml
+Sitemap: https://jhicks2306.github.io/do4ds-labs/sitemap.xml

@@ -18,7 +18,7 @@
     "href": "eda.html#penguin-mass-vs-bill-length-by-species",
     "title": "Penguins EDA",
     "section": "Penguin Mass vs Bill Length by Species",
-    "text": "Penguin Mass vs Bill Length by Species\n\n\nCode\ndf %&gt;%\n  ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +\n  geom_point() + \n  geom_smooth(method = \"lm\")\n\n\n\n\n\nChart shows penguin body mass is positively correlated with bill length for all species in the data set."
+    "text": "Penguin Mass vs Bill Length by Species\n\n\nCode\ndf %&gt;%\n  ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +\n  geom_point() + \n  geom_smooth(method = \"lm\")\n\n\n\n\n\n\n\n\n\nChart shows penguin body mass is positively correlated with bill length for all species in the data set."
   },
   {
     "objectID": "index.html",
