@@ -10,7 +10,7 @@ You can view the Quarto website here and a video of the interactive dahsboard is
 
 This project used dummy data to practice some fundamental skills related to developer operations for data science.
 
-Below summarises the skills practiced during this project:
+Skills and technologies used during this project:
 - Created a Quarto webste using both R and Python environments.
 - Moved data into a `DuckDB` database.
 - Created an API to serve a Python machine-learning model using `vetiver`.
